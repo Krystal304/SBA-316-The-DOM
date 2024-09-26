@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./scripts/script.js"></script>
+    <!-- <script defer src="./scripts/script.js"></script> -->
     <link rel ="stylesheet" href ="./styles/style.css">
     <title>Yoga Blog</title>
 </head>
 <body>
     <h1 id="heading">Welcome to Yoga Blog <span id="name"></span></h1>
-    <p class ="para">But I must explain to you how all this mistaken
+    <p  id ="para">But I must explain to you how all this mistaken
       idea of denouncing pleasure and praising pain was born and I 
       will give you a complete account of the system, and expound 
       the actual teachings of the great explorer of the truth, 
@@ -32,8 +32,8 @@
         <div class="container">
 
             <!-- Registration Side -->
-          <h1>Registration</h1>
-          <p class ="para">Please fill in this form to create an account.</p>
+          <h1 id="Register"><Registration</h1>
+          <p id ="para">Please fill in this form to create an account.</p>
           <hr>
         <!-- Registration Form -->
           <label for="email"><b>Email:</b></label>
@@ -45,15 +45,15 @@
           <label for="confirm_pass"><b>Confirm Password:</b></label>
           <input type="password" placeholder="Confirm Password" name="confirm_pass" id="confirm_pass" required>
           <hr>
-          <p class ="para">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <p id="para">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
       
           <button type="submit" class="registerbtn">Register</button>
         </div>
         
         <div class="container signin">
-          <p class ="para">Already have an account? <a href="#">Sign in</a>.</p>
+          <p id="para">Already have an account? <a href="#">Sign in</a>.</p>
         </div>
     </form>
-    
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

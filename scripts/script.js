@@ -7,16 +7,15 @@ heading.style.textAlign ='center';
 
 
 const passwordInput = document.getElementById('pass');
-const registerBtn = document.querySelectorAll("registerbtn");
-const errMessage = document.querySelector("errMessage");
+const registerBtn = document.querySelector(".registerbtn");
 const emailInput = document.getElementById("email");
 
-
+console.log(registerBtn)
 
 
 // add listener to registration validation
     registerBtn.addEventListener("click", function(event) {
-    document.getElementById("registerbtn");
+    document.getElementById(".registerbtn");
     if (emailInput.checkValidity && (validatePassword(password))) {
         alert("Registration Complete!" )
     } else {
@@ -32,14 +31,29 @@ const emailInput = document.getElementById("email");
         confirmPasswordInput.addEventListener("input", validatePassword);
 
         function validatePassword(password){
-            let password = passwordInput.value;
+             password = passwordInput.value;
             let confirmPassword = confirmPasswordInput.value;
             let errMessage = document.querySelector("errMessage");
             if (password !== confirmPassword){
                 errMessage.textContent = "Invalid Password"
             }
         }
-    const container = document.querySelector
+
+
+        let para = document.querySelectorAll(`#para`);
+        para[0].style.backgroundColor = "tan"
+
+
+
+        console.log(para)
+
+        // let textInputs = document.querySelectorAll(`input[type=`text`]`);
+        // textInput.forEach(input =>{
+        //     input.placeholder
+        // })
+     
+       
+
   
 
 // let welcomeBtn = document.getElementById ('welcome')
@@ -72,4 +86,4 @@ const emailInput = document.getElementById("email");
 //     newHead.textContent = `Welcome!!`;
 //     body[0].appendChild(newHead);
 //   }
-// }
+// 
