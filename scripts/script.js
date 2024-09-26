@@ -17,12 +17,17 @@ console.log(registerBtn)
     registerBtn.addEventListener("click", function(event) {
     document.getElementById(".registerbtn");
     if (emailInput.checkValidity && (validatePassword(password))) {
-        alert("Registration Complete!" )
+    // create a paragraph, add text content to paragraph, append to the DOM
+    let paragraph = document.createElement(`p`);
+    paragraph.textContent= "Registration Complete!";
+    document.body.appendChild(paragraph);
+        // alert("Registration Complete!" )
     } else {
         event.preventDefault();
         alert ("Password and/or email is invalid")
     }
   });
+
 
   //add listener for password input
 
