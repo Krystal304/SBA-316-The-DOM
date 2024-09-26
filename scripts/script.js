@@ -5,11 +5,14 @@ heading.style.textAlign ='center';
 
 // Caching DOM Elements
 
-const emailInput = document.getElementById('email');
+
 const passwordInput = document.getElementById('pass');
-let confirmPasswordInput = document.getElementById("confirm_pass");
 const registerBtn = document.querySelectorAll("registerbtn");
 const errMessage = document.querySelector("errMessage");
+const emailInput = document.getElementById("email");
+
+
+
 
 // add listener to registration validation
     registerBtn.addEventListener("click", function(event) {
@@ -22,32 +25,22 @@ const errMessage = document.querySelector("errMessage");
     }
   });
 
-
   //add listener for password input
-confirmPassword.addEventListener("input", validatePassword);
 
-function validatePassword(password,) {
-let password = passwordInput.value;
+        let confirmPasswordInput = document.getElementById("confirm_pass");
+       
+        confirmPasswordInput.addEventListener("input", validatePassword);
 
-let confirmPassword = confirmPasswordInput.value
-
-const errMessage = document.querySelector("errMessage");
-
-if (password !== confirmPassword) {
-    errMessage.textContent = "Invalid Password";
-    return false;
-} else{
-    errMessage.textContent = ""
-    return true;
-}
-
-}
-
-
-
-
-
- 
+        function validatePassword(password){
+            let password = passwordInput.value;
+            let confirmPassword = confirmPasswordInput.value;
+            let errMessage = document.querySelector("errMessage");
+            if (password !== confirmPassword){
+                errMessage.textContent = "Invalid Password"
+            }
+        }
+    const container = document.querySelector
+  
 
 // let welcomeBtn = document.getElementById ('welcome')
 
