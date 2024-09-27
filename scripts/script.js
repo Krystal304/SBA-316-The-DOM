@@ -15,7 +15,7 @@ console.log(registerBtn)
 
 // add listener to registration validation
     registerBtn.addEventListener("click", function(event) {
-    // modify style of the element in reponse to user interactions using classlist properties. 
+    // modify style of the element in reponse to user interactions using style properties. 
     registerBtn.style.backgroundColor ="red";
     document.getElementById(".registerbtn");
     if (emailInput.checkValidity && (validatePassword(password))) {
