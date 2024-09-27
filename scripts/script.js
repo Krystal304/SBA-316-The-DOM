@@ -17,6 +17,8 @@ console.log(registerBtn)
     registerBtn.addEventListener("click", function(event) {
     // modify style of the element in reponse to user interactions using style properties. 
     registerBtn.style.backgroundColor ="red";
+    // add prompt method
+    let person = prompt("please enter your email")
     document.getElementById(".registerbtn");
     if (emailInput.checkValidity && (validatePassword(password))) {
     // create a paragraph, add text content to paragraph, append to the DOM
@@ -43,7 +45,7 @@ console.log(registerBtn)
             let errMessage = document.querySelector("errMessage");
             if (password !== confirmPassword){
             // BOM properties and method alert
-                window.alert ("Invalid password");
+                alert ("Invalid password");
             // errMessage.textContent = "Invalid Password";
             }
         }
@@ -55,3 +57,8 @@ console.log(registerBtn)
 
 
         console.log(para)
+
+
+        // add BOM property navigator
+
+       
