@@ -59,6 +59,9 @@ console.log(registerBtn)
         console.log(para)
 
 
-        // add BOM property navigator
+        // nextElementSibling
+
+        let text = document.getElementById(`fname`).nextElementSibling.innerHTML;
+        document.getElementById(`lname`).innerHTML = text;
 
        
