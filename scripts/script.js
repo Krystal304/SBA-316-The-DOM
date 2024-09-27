@@ -42,7 +42,9 @@ console.log(registerBtn)
             let confirmPassword = confirmPasswordInput.value;
             let errMessage = document.querySelector("errMessage");
             if (password !== confirmPassword){
-                errMessage.textContent = "Invalid Password";
+            // BOM properties and method alert
+                window.alert ("Invalid password");
+            // errMessage.textContent = "Invalid Password";
             }
         }
 
