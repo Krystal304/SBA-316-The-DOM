@@ -60,8 +60,9 @@ console.log(registerBtn)
 
 
         // nextElementSibling
-
-        let text = document.getElementById(`fname`).nextElementSibling.innerHTML;
-        document.getElementById(`lname`).innerHTML = text;
+        function inputText (){
+            let text = document.getElementById(`fname`).nextElementSibling.innerHTML;
+            document.getElementById(`lname`).innerHTML = text;  
+        }
 
        
