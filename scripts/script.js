@@ -45,15 +45,17 @@ console.log(registerBtn)
             let errMessage = document.querySelector("errMessage");
             if (password !== confirmPassword){
             // BOM properties and method alert
-                alert ("Invalid password");
-            // errMessage.textContent = "Invalid Password";
+                alert ("Passwords do not match");
+            errMessage.textContent = "Invalid Password";
+            // }else {
+            //     // clear message
+            //     errMessage.textContent = "";
             }
         }
 
 
         let para = document.querySelectorAll(`#para`);
         para[0].style.backgroundColor = "tan"
-
 
 
         console.log(para)
