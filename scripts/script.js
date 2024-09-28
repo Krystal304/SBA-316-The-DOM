@@ -67,4 +67,10 @@ console.log(registerBtn)
             document.getElementById(`lname`).innerHTML = text;  
         }
 
+        // modify element in response to user interaction
+        function showInput(){
+            let userInput = document.getElementById("fname").value;
+            document.getElementById("lname").innerHTML = userInput;
+            
+        }
        
