@@ -1,0 +1,5 @@
+# Welcome To My Yoga Blog
+## Welcome To My Yoga Blog is a website dedicated to teaching the world about the benefits of doing yoga. On this webpage you can create an account to join our weekly subscriptions. Every week we will share with you updated yoga practices and poses you can do at home. 
+## technology used:  https://www.w3schools.com/, https://developer.mozilla.org/en-US/, https://stackoverflow.com/
+## how to get started: How to get started: Create a github account if you don't already have an account. Login in with your username and password. Clone my repo by clicking on the link provided. Please remember to change git remote url to avoid accidental pushes. https://github.com/Krystal304/SBA-316-The-DOM.git
+## Acknowledgments: Your contributions are welcomed and greatly appreciated. Your contributes will also help me grow and learn. If you have any suggestions on how I can make this assigment tracker better, please let me know. Thank you https://www.w3schools.com/, https://developer.mozilla.org/en-US/, https://stackoverflow.com/ Thank you
